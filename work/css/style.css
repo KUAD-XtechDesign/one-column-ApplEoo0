@@ -1,0 +1,77 @@
+
+body{
+    background-color: #ffffff;
+  }
+  
+  .wrapper{
+    max-width: 1000px;
+    background-color: rgb(0, 0, 0);
+    margin: 0 auto;
+  }
+  
+  img{
+    max-width: 100%;
+  }
+  
+  .img_button img{
+    display: block;
+  }
+  
+  .img_button:hover{
+    opacity: 0.8;
+  }
+  
+  .content{
+    display: none;
+    padding: 30px;
+  }
+  
+  .close_button{
+    display: inline-block;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .close_button:hover{
+    transform: rotate(360deg);
+  }
+  
+  .img_button{
+    transition: 0.5s all;
+    cursor: pointer;
+  }
+  
+  /* 横並び追加 */
+  .txt_img{
+    display: flex;
+  }
+  
+  .img{
+    width: 20%;
+  }
+  
+  .txt{
+    width: 80%;
+    padding: 10px;
+  }
+  
+  /* 個別に指定 */
+
+  #content01 .close_button{
+    background-color: rgb(255, 136, 0);
+    position: absolute;
+  }
+
+  #content02 .close_button{
+    background-color: rgb(0, 153, 255);
+    cursor: pointer;
+    position: relative;
+  }
+  
+  #content03 .close_button{
+    background-color: rgb(255, 0, 0);
+    position: sticky;
+  }
